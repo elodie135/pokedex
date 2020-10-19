@@ -1,23 +1,6 @@
-#body {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-}
-
 #list {
   display: flex;
   flex-wrap: wrap;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  padding-bottom: 10px;
-  color: #000000;
-  position: relative;
-  text-align: right;
-  margin-bottom: 15px;
 }
 
 #list li {
@@ -29,14 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 90px;
-  height: 90px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #description {
@@ -59,8 +34,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   padding-bottom: 10px;
-  color: #ffffff;
+  color: #d7b8f1;
   position: relative;
-  text-align: center;
+  text-align: right;
   margin-bottom: 15px;
 }

@@ -1,0 +1,12 @@
+#list {
+}
+#list li {
+  display: flex;
+  flex-direction: row;
+}
+#list li:hover {
+}
+
+#description {
+  display: none;
+}

@@ -1,0 +1,25 @@
+#list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#list li {
+}
+
+#list li:hover {
+}
+
+#description {
+  display: none;
+}
+#description.show {
+  display: block;
+  position: fixed;
+  width: 10%;
+  height: auto;
+  top: 20%;
+  left: 0xp;
+}
+.body {
+  background: #192431;
+}

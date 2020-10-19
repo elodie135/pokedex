@@ -14,7 +14,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   padding-bottom: 10px;
-  color: #000000;
+  color: #d7b8f1;
   position: relative;
   text-align: right;
   margin-bottom: 15px;
@@ -59,8 +59,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   padding-bottom: 10px;
-  color: #ffffff;
+  color: #d7b8f1;
   position: relative;
-  text-align: center;
+  text-align: right;
   margin-bottom: 15px;
 }

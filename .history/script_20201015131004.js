@@ -93,7 +93,7 @@ function hideDescription() {
     // const fields= description.querySelectorAll("dd");
     // fields.forEach(dd => {
     //     dd.innerHTML = "";
-//}
+})
 
 // Fetch the API end-point and fill the list
 }

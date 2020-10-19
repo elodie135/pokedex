@@ -1,0 +1,14 @@
+#list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#list li {
+}
+
+#list li:hover {
+}
+
+#description {
+  display: none;
+}

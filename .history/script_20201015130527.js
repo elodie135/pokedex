@@ -27,7 +27,7 @@ function emptyList() {
 function createItem(pokemon) {
 
     // Create a li tag
-    const item = document.createElement("li");
+    const item = document.createElement("div");
     const image = document.createElement("img");
     const weight = document.createElement("p");
     const id = document.createElement("p");
@@ -40,7 +40,7 @@ function createItem(pokemon) {
         item.appendChild(image);
         item.appendChild(weight);
         item.appendChild(id);
-        
+        item.appendChild(name);
 
         image.setAttribute("src",data.sprites.front_default);
         weight.innerText = data.weight;
@@ -90,10 +90,10 @@ function showDescription(data) {
  */
 function hideDescription() {
     description.classList.remove("show");
-    // const fields= description.querySelectorAll("dd");
-    // fields.forEach(dd => {
-    //     dd.innerHTML = "";
-//}
+    const fields= description.querySelectorAll("dd");
+    fields.forEach(dd => {
+        dd.innerHTML = "";
+})
 
 // Fetch the API end-point and fill the list
 }

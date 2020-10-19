@@ -1,0 +1,15 @@
+#list {
+}
+#list li {
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+}
+#list li:hover {
+}
+
+#description {
+  display: none;
+}

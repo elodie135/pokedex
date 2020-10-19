@@ -34,24 +34,23 @@ function createItem(pokemon) {
     
     fetch(pokemon.url).then(transformToJson).then((data) => {
         // ...
+        console.log(data);
 
         item.innerHTML = data.name;
         list.appendChild(item);
         item.appendChild(image);
         item.appendChild(weight);
         item.appendChild(id);
-        
+        item.addEventListener('click', ()=> ;
+            showDescription(data);
 
         image.setAttribute("src",data.sprites.front_default);
         weight.innerText = data.weight;
         id.innerText = data.id;
 
-        item.addEventListener('click', ()=> {
-            showDescription(data);
-
-        
+        console.log(data);
     });
-})}
+}
 
 /**
  * fill the item list with values
@@ -65,10 +64,7 @@ function fillList(json) {
  * Fill and display the description
  */
 function showDescription(data) {
-    console.log(data);
-    description.classList.add("show");
-    const fields = description.querySelectorAll("dd");
-    fields.forEach(dd => {
+    field.forEach(dd => {
         dd.innerHTML = "";
         const para = dd.className;
         if (para == "types"){
@@ -90,10 +86,10 @@ function showDescription(data) {
  */
 function hideDescription() {
     description.classList.remove("show");
-    // const fields= description.querySelectorAll("dd");
-    // fields.forEach(dd => {
-    //     dd.innerHTML = "";
-//}
+    const fields= description.querySelectorAll("dd");
+    field.forEach(dd => {
+        dd.innerHTML = "";
+})
 
 // Fetch the API end-point and fill the list
 }

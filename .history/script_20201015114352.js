@@ -51,7 +51,7 @@ function createItem(pokemon) {
 
         
     });
-})}
+})
 
 /**
  * fill the item list with values
@@ -66,9 +66,7 @@ function fillList(json) {
  */
 function showDescription(data) {
     console.log(data);
-    description.classList.add("show");
-    const fields = description.querySelectorAll("dd");
-    fields.forEach(dd => {
+    field.forEach(dd => {
         dd.innerHTML = "";
         const para = dd.className;
         if (para == "types"){
@@ -90,10 +88,10 @@ function showDescription(data) {
  */
 function hideDescription() {
     description.classList.remove("show");
-    // const fields= description.querySelectorAll("dd");
-    // fields.forEach(dd => {
-    //     dd.innerHTML = "";
-//}
+    const fields= description.querySelectorAll("dd");
+    field.forEach(dd => {
+        dd.innerHTML = "";
+})
 
 // Fetch the API end-point and fill the list
 }

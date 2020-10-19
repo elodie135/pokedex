@@ -40,7 +40,6 @@ function createItem(pokemon) {
         item.appendChild(image);
         item.appendChild(weight);
         item.appendChild(id);
-        
 
         image.setAttribute("src",data.sprites.front_default);
         weight.innerText = data.weight;
@@ -90,10 +89,10 @@ function showDescription(data) {
  */
 function hideDescription() {
     description.classList.remove("show");
-    // const fields= description.querySelectorAll("dd");
-    // fields.forEach(dd => {
-    //     dd.innerHTML = "";
-//}
+    const fields= description.querySelectorAll("dd");
+    fields.forEach(dd => {
+        dd.innerHTML = "";
+})
 
 // Fetch the API end-point and fill the list
 }
